@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import { Carousel } from './components/Carousel';
 // 考虑到页面的结构可能各不相同，因此每个页面看作单独的组件
 import Page1 from './components/pages/Page1';
@@ -12,10 +13,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Carousel>
-      <Page1 />
-      <Page2 />
-      <Page3 />
-    </Carousel>
+    <App />
   </React.StrictMode>
 );
